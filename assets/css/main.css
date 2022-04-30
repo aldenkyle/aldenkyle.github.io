@@ -163,7 +163,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 .5em 0;
 	}
 
 	h1 {
@@ -198,7 +198,7 @@ input, select, textarea {
 	h2, h3, h4, h5, h6 {
 		font-weight: 900;
 		line-height: 1.5;
-		margin: 0 0 2em 0;
+		margin: 0 0 .5em 0;
 		text-transform: uppercase;
 		letter-spacing: 0.35em;
 	}
@@ -2308,6 +2308,16 @@ input, select, textarea {
 			padding: 0;
 		}
 
+/* Responsive Google Slides, YouTube , Vimeo, Twitch */
+iframe[src*="docs.google.com"],
+iframe[src*="youtube.com"],
+iframe[src*="player.vimeo.com"],
+iframe[src*="player.twitch.tv"]{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
 /* Image */
 
 	.image {
@@ -2318,12 +2328,12 @@ input, select, textarea {
 	}
 
 		.image img {
-			border-radius: 4px;
+			border-radius: 0px;
 			display: block;
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 25%;
 		}
 
 			.image.left img, .image.right img {
@@ -2332,8 +2342,8 @@ input, select, textarea {
 
 		.image.left {
 			float: left;
-			padding: 0 1.5em 1em 0;
-			top: 0.25em;
+			padding: 0 em 5em 0;
+			top: 0m;
 		}
 
 		.image.right {
@@ -2706,7 +2716,7 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #feb24c;
+				background-color: #f2849e;
 			}
 
 			.tiles article.style2 > .image:before {
@@ -2718,7 +2728,7 @@ input, select, textarea {
 			}
 
 			.tiles article.style4 > .image:before {
-				background-color: #c75b9b;
+				background-color: #feb24c;
 			}
 
 			.tiles article.style5 > .image:before {
@@ -2890,7 +2900,7 @@ input, select, textarea {
 						position: relative;
 						height: 3em;
 						line-height: 3em;
-						padding: 0 1.5em;
+						padding: 0;
 						background-color: rgba(255, 255, 255, 0.5);
 						border-radius: 4px;
 						border: 0;
